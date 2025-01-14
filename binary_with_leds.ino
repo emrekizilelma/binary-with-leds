@@ -3,8 +3,8 @@
  * Author:      Emre Kızılelma
  * Date:        2025-01-14
  * Description: An Arduino project that displays the 
- 				given decimal number as an 8-bit value 
-                in base 2 with Red LED's.
+ *				      given decimal number as an 8-bit value 
+ *              in base 2 with Red LED's.
  * Version:     1.0
  * License:     MIT
  */
@@ -19,8 +19,7 @@ LiquidCrystal_I2C lcd(0x20,16,2);
 const uint8_t led_pins[8] = {2, 3, 4, 5, 6, 7, 8, 9};
 
 
-void setup()
-{
+void setup() {
   
   for(int i = 0; i < 8; i++) {
     pinMode(led_pins[i], OUTPUT);
